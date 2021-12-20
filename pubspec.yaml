@@ -60,8 +60,8 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  #assets:
-  #- assets/images/
+  assets:
+  - assets/images/
   # - assets/videos/
   #  - images/a_dot_ham.jpeg
 
@@ -76,14 +76,7 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  fonts:
-    - family: Akrobat
-      fonts:
-        - asset: assets/fonts/Akrobat-Regular.otf
-    - family: Nexa
-      fonts:
-        - asset: assets/fonts/NexaBook.otf
-  #       - asset: fonts/Schyler-Italic.ttf
+  #fonts:
   #         style: italic
   #   - family: Trajan Pro
   #     fonts:

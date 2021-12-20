@@ -7,11 +7,35 @@ class TurismoPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text(turismo.nombre ?? "")),
-      body: Column(
-        children: const [Center(), Text("Lugares Representativos")],
-      ),
+    return SafeArea(
+      child: Scaffold(
+          appBar: AppBar(
+            title: Text(turismo.nombre ?? ""),
+          ),
+          body: Padding(
+            padding: const EdgeInsets.all(20),
+            child: Column(
+              children: [
+                Text(
+                  "Información " + turismo.nombre.toString(),
+                  style: const TextStyle(
+                      fontSize: 25, fontWeight: FontWeight.bold),
+                ),
+                Text(
+                  "Descripcion: " + turismo.descripcion.toString(),
+                  style: const TextStyle(fontSize: 15),
+                ),
+                Text(
+                  "Longitud: " + turismo.longitud.toString(),
+                  style: const TextStyle(fontSize: 15),
+                ),
+                Text(
+                  "Latitud: " + turismo.longitud.toString(),
+                  style: const TextStyle(fontSize: 15),
+                ),
+              ],
+            ),
+          )),
     );
   }
 }

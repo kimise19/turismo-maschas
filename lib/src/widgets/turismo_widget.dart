@@ -7,17 +7,17 @@ class TurismoWidget extends StatefulWidget {
   const TurismoWidget({Key? key}) : super(key: key);
 
   @override
-  State<TurismoWidget> createState() => _MantenimientosWidgetState();
+  State<TurismoWidget> createState() => _PlacesWidgetState();
 }
 
-class _MantenimientosWidgetState extends State<TurismoWidget> {
+class _PlacesWidgetState extends State<TurismoWidget> {
   final TurismoService _turismoService = TurismoService();
   List<Turismo>? _listaTurismo;
 
   @override
   void initState() {
     super.initState();
-    _downloadMantenimientos();
+    _downloadPlaces();
   }
 
   @override
@@ -36,8 +36,8 @@ class _MantenimientosWidgetState extends State<TurismoWidget> {
                   ));
   }
 
-  _downloadMantenimientos() async {
-    _listaTurismo = await _turismoService.getMantenimientos();
+  _downloadPlaces() async {
+    _listaTurismo = await _turismoService.getPlaces();
     if (mounted) {
       setState(() {});
     }

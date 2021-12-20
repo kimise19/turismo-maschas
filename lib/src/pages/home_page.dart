@@ -10,7 +10,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0;
-  final List<String> _options = ["Inicio", "Explorar", "Favoritos"];
+  final List<String> _options = ["Inicio", "Explorar", "Informacion"];
 
   @override
   void initState() {
